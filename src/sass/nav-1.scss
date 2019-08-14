@@ -1,0 +1,204 @@
+.background-fade {
+  background: #994949;
+  background-size: 200% 100%;
+  transition:all 1s ease;
+  -webkit-animation: slideAcross 2s;
+  -moz-animation: slideAcross 2s;
+  animation: slideAcross 2s;
+}
+
+.background-fade-1 {
+	background-position: -100% 0;
+}
+
+.strikeout {
+  left: 0;
+  margin-top: calc(0.1em / 2 * -0.5);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  height: 7px;
+  background-color: #994949;
+  width: 0%;
+  transition: width 0.75s ease;
+}
+
+.nav-button-1 {
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+.rotate-button {
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+
+.title {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.hide-title {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+
+.nav-detail>ul>li:hover {
+  .strikeout {
+    width: 100%;
+  }
+}
+
+
+
+.nav-detail > ul {
+  opacity: 1;
+}
+
+.nav-contact {
+  transition: opacity 2s ease;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+.nav-detail {
+  -webkit-animation: slideDown 0.8s;
+  -moz-animation: slideDown 0.8s;
+  animation: slideDown 0.8s;
+}
+
+.nav-image {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: contain;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.nav-image.active {
+  opacity: 1;
+}
+
+.profile-image {
+  background-image: url('/dist/img/profile-1.png');
+}
+.work-image {
+	background-image: url('/dist/img/work-1.png');
+}
+.insights-image {
+	background-image: url('/dist/img/insights-1.png');
+}
+.talk-image {
+	background-image: url('/dist/img/talk-1.png');
+}
+
+
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@-moz-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@-webkit-keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+@keyframes slideDown {
+  from { transform: translateY(-200%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateY(0%);
+         opacity: 1;
+       }
+}
+
+@-moz-keyframes slideDown {
+  from { transform: translateY(-200%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateY(0%);
+         opacity: 1;
+       }
+}
+
+@-webkit-keyframes slideDown {
+  from { transform: translateY(-200%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateY(0%);
+         opacity: 1;
+       }
+}
+
+
+
+@keyframes slideAcross {
+  from { transform: translateX(-200%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateX(0%);
+         opacity: 1;
+       }
+}
+
+@-moz-keyframes slideAcross {
+  from { transform: translateX(-200%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateX(0%);
+         opacity: 1;
+       }
+}
+
+@-webkit-keyframes slideAcross {
+  from { transform: translateX(-200%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateX(0%);
+         opacity: 1;
+       }
+}

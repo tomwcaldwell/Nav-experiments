@@ -1,0 +1,132 @@
+.nav-button-2 {
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+.rotate-button {
+	transform: rotate(45deg);
+	transition: all 1s;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-detail-2 {
+  display: none;
+}
+
+.nav-detail-2--start{
+  display: block;
+  right: -100%;
+  transition: all 1s ease;
+  -webkit-animation: slideRight 1.5s;
+  -moz-animation: slideRight 1.5s;
+  animation: slideRight 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.nav-detail-2--open {
+  width:33.333%;
+  transition:all 1s ease;
+  -webkit-animation: slideInFromRight 1.5s;
+  -moz-animation: slideInFromRight 1.5s;
+  animation: slideInFromRight 1.5s;
+}
+
+.page {
+	transition: all 1s ease;
+}
+
+.title-opacity {
+	opacity: 0.2;
+	transition: all 1s ease;
+}
+
+.nav-detail-2 ul {
+  transition: all 2s ease;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+
+
+@keyframes slideInFromRight {
+  from { transform: translateX(100%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateX(0%);
+         opacity: 1;
+       }
+}
+
+@-moz-keyframes slideInFromRight {
+  from { transform: translateX(100%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateX(0%);
+         opacity: 1;
+       }
+}
+
+@-webkit-keyframes slideInFromRight {
+  from { transform: translateX(100%);
+         opacity: 0;
+       }
+  to   { 
+         transform: translateX(0%);
+         opacity: 1;
+       }
+}
+
+
+
+@keyframes slideRight {
+  from { transform: translateX(0%);
+         opacity: 1;
+       }
+  to   { 
+         transform: translateX(100%);
+         opacity: 0;
+       }
+}
+
+@-moz-keyframes slideRight {
+  from { transform: translateX(0%);
+         opacity: 1;
+       }
+  to   { 
+         transform: translateX(100%);
+         opacity: 0;
+       }
+}
+
+@-webkit-keyframes slideRight {
+  from { transform: translateX(0%);
+         opacity: 1;
+       }
+  to   { 
+         transform: translateX(100%);
+         opacity: 0;
+       }
+}
