@@ -16,31 +16,74 @@
   width: 0;
 }
 
-.image-li {
+.nav-3-image-1 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: all 0.5s ease-in-out;
+  -moz-animation: all 0.5s ease-in-out;
   background-image: none;
-	background-size: cover;
-	object-fit: contain;
-	transition: background-image 1s ease-in-out;
-  -webkit-transition: background-image 1s ease-in-out;
-  -moz-transition: background-image 1s ease-in-out;
-  -ms-transition: background-image 1s ease-in-out;
-  -o-transition: background-image 1s ease-in-out;
+  background-size: cover;
+  object-fit: contain;
 }
 
-.image-li.profile-image-3 {
+.nav-3-image-1.active {
+  opacity: 1;
+}
+
+.nav-3-image-2 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: all 0.5s ease-in-out;
+  -moz-animation: all 0.5s ease-in-out;
+  background-image: none;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.nav-3-image-2.active {
+  opacity: 1;
+}
+
+.nav-3-image-3 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: all 0.5s ease-in-out;
+  -moz-animation: all 0.5s ease-in-out;
+  background-image: none;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.nav-3-image-3.active {
+  opacity: 1;
+}
+
+.nav-3-image-4 {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: all 0.5s ease-in-out;
+  -moz-animation: all 0.5s ease-in-out;
+  background-image: none;
+  background-size: cover;
+  object-fit: contain;
+}
+
+.nav-3-image-4.active {
+  opacity: 1;
+}
+
+.profile-image-3 {
   background-image: url('/dist/img/profile-1.png');
 }
-.image-li.work-image-3 {
+.work-image-3 {
   background-image: url('/dist/img/work-1.png');
 }
-.image-li.insights-image-3 {
+.insights-image-3 {
   background-image: url('/dist/img/insights-1.png');
 }
-.image-li.talk-image-3 {
+.talk-image-3 {
   background-image: url('/dist/img/talk-1.png');
 }
-
-
 
 .hover-container-1, .hover-container-2, .hover-container-3, .hover-container-4 {
   width: 100%;
@@ -50,8 +93,6 @@
 .hover-title-1, .hover-title-2, .hover-title-3, .hover-title-4 {
   position: absolute;
 }
-
-
 
 .nav-detail-3 {
   display: none;

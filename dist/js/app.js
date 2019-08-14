@@ -156,17 +156,17 @@ $('.nav-button-3').click(function () {
   $('.navigation-3').toggleClass('nav-detail-3--open');
   $('.nav-bottom-3').addClass('nav-bottom-3--start');
   $('.nav-bottom-3').toggleClass('nav-bottom-3--open');
-  $('.nav-detail-3 ul .nav-3-image-1').hover(function () {
-    $('.nav-3-image-1').toggleClass('profile-image-3');
+  $('.nav-detail-3 ul .nav-3-image-1-block').hover(function () {
+    $('.nav-3-image-1').toggleClass('active');
   });
-  $('.nav-detail-3 ul .nav-3-image-2').hover(function () {
-    $('.nav-3-image-2').toggleClass('work-image-3');
+  $('.nav-detail-3 ul .nav-3-image-2-block').hover(function () {
+    $('.nav-3-image-2').toggleClass('active');
   });
-  $('.nav-detail-3 ul .nav-3-image-3').hover(function () {
-    $('.nav-3-image-3').toggleClass('insights-image-3');
+  $('.nav-detail-3 ul .nav-3-image-3-block').hover(function () {
+    $('.nav-3-image-3').toggleClass('active');
   });
-  $('.nav-detail-3 ul .nav-3-image-4').hover(function () {
-    $('.nav-3-image-4').toggleClass('talk-image-3');
+  $('.nav-detail-3 ul .nav-3-image-4-block').hover(function () {
+    $('.nav-3-image-4').toggleClass('active');
   });
   setTimeout(function () {
     $('.nav-detail-3 ul').fadeIn(800);
@@ -184,7 +184,6 @@ $('.nav-button-3').click(function () {
     var innerDiv = $('.hover-title-1');
     var outerDiv = $('.hover-container-1');
     var outDim = outerDiv.offset();
-    console.log(outDim);
     outDim.right = outDim.left + outerDiv.width();
     outDim.bottom = outDim.top + outerDiv.height();
     $(outerDiv).on('mousemove', function (e) {
