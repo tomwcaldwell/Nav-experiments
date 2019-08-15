@@ -105,186 +105,214 @@ $('.nav-button-3').click(function() {
 	$('.nav-button-3').toggleClass('rotate-button');
 
 	setTimeout(function() {
-		var innerDiv = $('.hover-title-1');
-		var outerDiv = $('.hover-container-1');
-		var outDim = outerDiv.offset();
-		outDim.right = (outDim.left + outerDiv.width());
-		outDim.bottom = (outDim.top + outerDiv.height());
-		$(outerDiv).on('mousemove', function(e) {
-		  var x = (e.clientX) - 120;
-		  var y = (e.clientY) - 45;
-		  var x_allowed = x >= outDim.left && x <= (outDim.right - innerDiv.width());
-		  var y_allowed = y >= outDim.top && y <= (outDim.bottom - innerDiv.height());
-		  if (y_allowed) {
-		    innerDiv.css({
-		      top: y + 'px',
-		    });
-		  } else {
-		    if (y >= outDim.top) {
-		      innerDiv.css({
-		        top: (outDim.bottom - innerDiv.height()) + 'px',
-		      });
-		    }
-		    if (y <= (outDim.bottom - innerDiv.height())) {
-		      innerDiv.css({
-		        top: outDim.top + 'px',
-		      });
-		    }
-		  }
-		  if (x_allowed) {
-		    innerDiv.css({
-		      left: x + 'px'
-		    });
-		  } else {
-		    if (x >= outDim.left) {
-		      innerDiv.css({
-		        left: outDim.right - innerDiv.width() + 'px',
-		      });
-		    }
-		    if (x <= (outDim.right - innerDiv.width())) {
-		      innerDiv.css({
-		        left: outDim.left + 'px',
-		      });
-		    }
-		  }
+		var title_div = $('.hover-title-1');
+		var container_div = $('.hover-container-1');
+
+
+		$(container_div).on('mousemove', function(e) {
+
+			//Get Mouse Positions
+			let mouse_position_x = e.clientX;
+			let mouse_position_y = e.clientY;
+
+			//Get Container Positions
+			let container_position_x = container_div.offset().left;
+			let container_position_y = container_div.offset().top;
+
+
+			//Mouse Position relative to container
+			let mouse_position_relative_to_container_x = mouse_position_x - container_position_x;
+			let mouse_position_relative_to_container_y = mouse_position_y - container_position_y;
+
+			//Get word center offset
+			let x_offset = title_div.width() / 2;
+			let y_offset = title_div.height() / 2;
+
+			//New positions
+			let new_x = mouse_position_relative_to_container_x - x_offset;
+			let new_y = mouse_position_relative_to_container_y - y_offset;
+
+			//Constrain the new positions
+			if(new_x < 0){
+				new_x = 0;
+			}
+			if(new_y < 0){
+				new_y = 0;
+			}
+			let most_x_position = container_div.width() - title_div.width();
+			let most_y_position = container_div.height() - title_div.height();
+			if(new_x > most_x_position){
+				new_x = most_x_position;
+			}
+			if(new_y > most_y_position){
+				new_y = most_y_position;
+			}
+
+			//Move to new location
+			title_div.css({
+				top: new_y + 'px',
+				left: new_x + 'px'
+			});
+
 		});
 	}, 4300);
 
 	setTimeout(function() {
-		var innerDiv = $('.hover-title-2');
-		var outerDiv = $('.hover-container-2');
-		var outDim = outerDiv.offset();
-		outDim.right = (outDim.left + outerDiv.width());
-		outDim.bottom = (outDim.top + outerDiv.height());
-		$(outerDiv).on('mousemove', function(e) {
-		  var x = (e.clientX) - 120;
-		  var y = (e.clientY) - 45;
-		  var x_allowed = x >= outDim.left && x <= (outDim.right - innerDiv.width());
-		  var y_allowed = y >= outDim.top && y <= (outDim.bottom - innerDiv.height());
-		  if (y_allowed) {
-		    innerDiv.css({
-		      top: y + 'px',
-		    });
-		  } else {
-		    if (y >= outDim.top) {
-		      innerDiv.css({
-		        top: (outDim.bottom - innerDiv.height()) + 'px',
-		      });
-		    }
-		    if (y <= (outDim.bottom - innerDiv.height())) {
-		      innerDiv.css({
-		        top: outDim.top + 'px',
-		      });
-		    }
-		  }
-		  if (x_allowed) {
-		    innerDiv.css({
-		      left: x + 'px'
-		    });
-		  } else {
-		    if (x >= outDim.left) {
-		      innerDiv.css({
-		        left: outDim.right - innerDiv.width() + 'px',
-		      });
-		    }
-		    if (x <= (outDim.right - innerDiv.width())) {
-		      innerDiv.css({
-		        left: outDim.left + 'px',
-		      });
-		    }
-		  }
+		var title_div = $('.hover-title-2');
+		var container_div = $('.hover-container-2');
+
+
+		$(container_div).on('mousemove', function(e) {
+
+			//Get Mouse Positions
+			let mouse_position_x = e.clientX;
+			let mouse_position_y = e.clientY;
+
+			//Get Container Positions
+			let container_position_x = container_div.offset().left;
+			let container_position_y = container_div.offset().top;
+
+
+			//Mouse Position relative to container
+			let mouse_position_relative_to_container_x = mouse_position_x - container_position_x;
+			let mouse_position_relative_to_container_y = mouse_position_y - container_position_y;
+
+			//Get word center offset
+			let x_offset = title_div.width() / 2;
+			let y_offset = title_div.height() / 2;
+
+			//New positions
+			let new_x = mouse_position_relative_to_container_x - x_offset;
+			let new_y = mouse_position_relative_to_container_y - y_offset;
+
+			//Constrain the new positions
+			if(new_x < 0){
+				new_x = 0;
+			}
+			if(new_y < 0){
+				new_y = 0;
+			}
+			let most_x_position = container_div.width() - title_div.width();
+			let most_y_position = container_div.height() - title_div.height();
+			if(new_x > most_x_position){
+				new_x = most_x_position;
+			}
+			if(new_y > most_y_position){
+				new_y = most_y_position;
+			}
+
+			//Move to new location
+			title_div.css({
+				top: new_y + 'px',
+				left: new_x + 'px'
+			});
+
 		});
 	}, 4300);
 
 	setTimeout(function() {
-		var innerDiv = $('.hover-title-3');
-		var outerDiv = $('.hover-container-3');
-		var outDim = outerDiv.offset();
-		outDim.right = (outDim.left + outerDiv.width());
-		outDim.bottom = (outDim.top + outerDiv.height());
-		$(outerDiv).on('mousemove', function(e) {
-		  var x = (e.clientX) - 120;
-		  var y = (e.clientY) - 45;
-		  var x_allowed = x >= outDim.left && x <= (outDim.right - innerDiv.width());
-		  var y_allowed = y >= outDim.top && y <= (outDim.bottom - innerDiv.height());
-		  if (y_allowed) {
-		    innerDiv.css({
-		      top: y + 'px',
-		    });
-		  } else {
-		    if (y >= outDim.top) {
-		      innerDiv.css({
-		        top: (outDim.bottom - innerDiv.height()) + 'px',
-		      });
-		    }
-		    if (y <= (outDim.bottom - innerDiv.height())) {
-		      innerDiv.css({
-		        top: outDim.top + 'px',
-		      });
-		    }
-		  }
-		  if (x_allowed) {
-		    innerDiv.css({
-		      left: x + 'px'
-		    });
-		  } else {
-		    if (x >= outDim.left) {
-		      innerDiv.css({
-		        left: outDim.right - innerDiv.width() + 'px',
-		      });
-		    }
-		    if (x <= (outDim.right - innerDiv.width())) {
-		      innerDiv.css({
-		        left: outDim.left + 'px',
-		      });
-		    }
-		  }
+		var title_div = $('.hover-title-3');
+		var container_div = $('.hover-container-3');
+
+
+		$(container_div).on('mousemove', function(e) {
+
+			//Get Mouse Positions
+			let mouse_position_x = e.clientX;
+			let mouse_position_y = e.clientY;
+
+			//Get Container Positions
+			let container_position_x = container_div.offset().left;
+			let container_position_y = container_div.offset().top;
+
+
+			//Mouse Position relative to container
+			let mouse_position_relative_to_container_x = mouse_position_x - container_position_x;
+			let mouse_position_relative_to_container_y = mouse_position_y - container_position_y;
+
+			//Get word center offset
+			let x_offset = title_div.width() / 2;
+			let y_offset = title_div.height() / 2;
+
+			//New positions
+			let new_x = mouse_position_relative_to_container_x - x_offset;
+			let new_y = mouse_position_relative_to_container_y - y_offset;
+
+			//Constrain the new positions
+			if(new_x < 0){
+				new_x = 0;
+			}
+			if(new_y < 0){
+				new_y = 0;
+			}
+			let most_x_position = container_div.width() - title_div.width();
+			let most_y_position = container_div.height() - title_div.height();
+			if(new_x > most_x_position){
+				new_x = most_x_position;
+			}
+			if(new_y > most_y_position){
+				new_y = most_y_position;
+			}
+
+			//Move to new location
+			title_div.css({
+				top: new_y + 'px',
+				left: new_x + 'px'
+			});
+
 		});
 	}, 4300);
 
 	setTimeout(function() {
-		var innerDiv = $('.hover-title-4');
-		var outerDiv = $('.hover-container-4');
-		var outDim = outerDiv.offset();
-		outDim.right = (outDim.left + outerDiv.width());
-		outDim.bottom = (outDim.top + outerDiv.height());
-		$(outerDiv).on('mousemove', function(e) {
-		  var x = (e.clientX) - 90;
-		  var y = (e.clientY) - 45;
-		  var x_allowed = x >= outDim.left && x <= (outDim.right - innerDiv.width());
-		  var y_allowed = y >= outDim.top && y <= (outDim.bottom - innerDiv.height());
-		  if (y_allowed) {
-		    innerDiv.css({
-		      top: y + 'px',
-		    });
-		  } else {
-		    if (y >= outDim.top) {
-		      innerDiv.css({
-		        top: (outDim.bottom - innerDiv.height()) + 'px',
-		      });
-		    }
-		    if (y <= (outDim.bottom - innerDiv.height())) {
-		      innerDiv.css({
-		        top: outDim.top + 'px',
-		      });
-		    }
-		  }
-		  if (x_allowed) {
-		    innerDiv.css({
-		      left: x + 'px'
-		    });
-		  } else {
-		    if (x >= outDim.left) {
-		      innerDiv.css({
-		        left: outDim.right - innerDiv.width() + 'px',
-		      });
-		    }
-		    if (x <= (outDim.right - innerDiv.width())) {
-		      innerDiv.css({
-		        left: outDim.left + 'px',
-		      });
-		    }
-		  }
+		var title_div = $('.hover-title-4');
+		var container_div = $('.hover-container-4');
+
+
+		$(container_div).on('mousemove', function(e) {
+
+			//Get Mouse Positions
+			let mouse_position_x = e.clientX;
+			let mouse_position_y = e.clientY;
+
+			//Get Container Positions
+			let container_position_x = container_div.offset().left;
+			let container_position_y = container_div.offset().top;
+
+
+			//Mouse Position relative to container
+			let mouse_position_relative_to_container_x = mouse_position_x - container_position_x;
+			let mouse_position_relative_to_container_y = mouse_position_y - container_position_y;
+
+			//Get word center offset
+			let x_offset = title_div.width() / 2;
+			let y_offset = title_div.height() / 2;
+
+			//New positions
+			let new_x = mouse_position_relative_to_container_x - x_offset;
+			let new_y = mouse_position_relative_to_container_y - y_offset;
+
+			//Constrain the new positions
+			if(new_x < 0){
+				new_x = 0;
+			}
+			if(new_y < 0){
+				new_y = 0;
+			}
+			let most_x_position = container_div.width() - title_div.width();
+			let most_y_position = container_div.height() - title_div.height();
+			if(new_x > most_x_position){
+				new_x = most_x_position;
+			}
+			if(new_y > most_y_position){
+				new_y = most_y_position;
+			}
+
+			//Move to new location
+			title_div.css({
+				top: new_y + 'px',
+				left: new_x + 'px'
+			});
+
 		});
 	}, 4300);
 
