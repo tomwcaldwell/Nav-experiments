@@ -183,6 +183,9 @@ $('.nav-button-3').click(function () {
   setTimeout(function () {
     var title_div = $('.hover-title-1');
     var container_div = $('.hover-container-1');
+    var title_div_starting_positions = title_div.position();
+    var title_div_starting_position_x = title_div_starting_positions.left;
+    var title_div_starting_position_y = title_div_starting_positions.top;
     $(container_div).on('mousemove', function (e) {
       //Get Mouse Positions
       var mouse_position_x = e.clientX;
@@ -201,22 +204,26 @@ $('.nav-button-3').click(function () {
       var new_y = mouse_position_relative_to_container_y - y_offset; //Constrain the new positions
 
       if (new_x < 0) {
-        new_x = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y < 0) {
-        new_y = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       var most_x_position = container_div.width() - title_div.width();
       var most_y_position = container_div.height() - title_div.height();
 
       if (new_x > most_x_position) {
-        new_x = most_x_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y > most_y_position) {
-        new_y = most_y_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       } //Move to new location
 
 
@@ -229,6 +236,9 @@ $('.nav-button-3').click(function () {
   setTimeout(function () {
     var title_div = $('.hover-title-2');
     var container_div = $('.hover-container-2');
+    var title_div_starting_positions = title_div.position();
+    var title_div_starting_position_x = title_div_starting_positions.left;
+    var title_div_starting_position_y = title_div_starting_positions.top;
     $(container_div).on('mousemove', function (e) {
       //Get Mouse Positions
       var mouse_position_x = e.clientX;
@@ -247,22 +257,26 @@ $('.nav-button-3').click(function () {
       var new_y = mouse_position_relative_to_container_y - y_offset; //Constrain the new positions
 
       if (new_x < 0) {
-        new_x = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y < 0) {
-        new_y = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       var most_x_position = container_div.width() - title_div.width();
       var most_y_position = container_div.height() - title_div.height();
 
       if (new_x > most_x_position) {
-        new_x = most_x_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y > most_y_position) {
-        new_y = most_y_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       } //Move to new location
 
 
@@ -275,6 +289,9 @@ $('.nav-button-3').click(function () {
   setTimeout(function () {
     var title_div = $('.hover-title-3');
     var container_div = $('.hover-container-3');
+    var title_div_starting_positions = title_div.position();
+    var title_div_starting_position_x = title_div_starting_positions.left;
+    var title_div_starting_position_y = title_div_starting_positions.top;
     $(container_div).on('mousemove', function (e) {
       //Get Mouse Positions
       var mouse_position_x = e.clientX;
@@ -293,22 +310,26 @@ $('.nav-button-3').click(function () {
       var new_y = mouse_position_relative_to_container_y - y_offset; //Constrain the new positions
 
       if (new_x < 0) {
-        new_x = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y < 0) {
-        new_y = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       var most_x_position = container_div.width() - title_div.width();
       var most_y_position = container_div.height() - title_div.height();
 
       if (new_x > most_x_position) {
-        new_x = most_x_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y > most_y_position) {
-        new_y = most_y_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       } //Move to new location
 
 
@@ -321,6 +342,9 @@ $('.nav-button-3').click(function () {
   setTimeout(function () {
     var title_div = $('.hover-title-4');
     var container_div = $('.hover-container-4');
+    var title_div_starting_positions = title_div.position();
+    var title_div_starting_position_x = title_div_starting_positions.left;
+    var title_div_starting_position_y = title_div_starting_positions.top;
     $(container_div).on('mousemove', function (e) {
       //Get Mouse Positions
       var mouse_position_x = e.clientX;
@@ -339,22 +363,26 @@ $('.nav-button-3').click(function () {
       var new_y = mouse_position_relative_to_container_y - y_offset; //Constrain the new positions
 
       if (new_x < 0) {
-        new_x = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y < 0) {
-        new_y = 0;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       var most_x_position = container_div.width() - title_div.width();
       var most_y_position = container_div.height() - title_div.height();
 
       if (new_x > most_x_position) {
-        new_x = most_x_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       }
 
       if (new_y > most_y_position) {
-        new_y = most_y_position;
+        new_x = title_div_starting_position_x;
+        new_y = title_div_starting_position_y;
       } //Move to new location
 
 

@@ -5,7 +5,7 @@
 			<div class="w-3/4 mx-auto h-full">
 				<ul class="list-reset hidden flex justify-between items-center h-full">
 					
-					<div class="w-1/4 nav-3-image-1-block relative flex items-center">
+					<div class="w-1/4 nav-3-image-1-block relative flex items-center justify-center">
 						<div class="nav-3-image-1 w-2/3 h-80 absolute cursor-pointer profile-image-3"></div>
 						<div class="nav-3-image-1-text w-2/3 mx-auto h-80 flex items-center justify-center cursor-pointer absolute">
 							<div class="hover-container-1 flex items-center justify-center relative">
@@ -14,7 +14,7 @@
 						</div>
 					</div>
 
-					<div class="w-1/4 nav-3-image-2-block relative flex items-center">
+					<div class="w-1/4 nav-3-image-2-block relative flex items-center justify-center">
 						<div class="nav-3-image-2 w-2/3 h-80 absolute cursor-pointer work-image-3"></div>
 						<div class="nav-3-image-2-text w-2/3 mx-auto h-80 flex items-center justify-center cursor-pointer absolute">
 							<div class="hover-container-2 flex items-center justify-center relative">
@@ -23,7 +23,7 @@
 						</div>
 					</div>
 
-					<div class="w-1/4 nav-3-image-3-block relative flex items-center">
+					<div class="w-1/4 nav-3-image-3-block relative flex items-center justify-center">
 						<div class="nav-3-image-3 w-2/3 h-80 absolute cursor-pointer insights-image-3"></div>
 						<div class="nav-3-image-3-text w-2/3 mx-auto h-80 flex items-center justify-center cursor-pointer absolute">
 							<div class="hover-container-3 flex items-center justify-center relative">
@@ -32,7 +32,7 @@
 						</div>
 					</div>
 
-					<div class="w-1/4 nav-3-image-4-block relative flex items-center">
+					<div class="w-1/4 nav-3-image-4-block relative flex items-center justify-center">
 						<div class="nav-3-image-4 w-2/3 h-80 absolute cursor-pointer talk-image-3"></div>
 						<div class="nav-3-image-4-text w-2/3 mx-auto h-80 flex items-center justify-center cursor-pointer absolute">
 							<div class="hover-container-4 flex items-center justify-center relative">
@@ -45,7 +45,7 @@
 				<div class="relative">
 					
 					<div class="nav-contact-3 hidden">
-						<div class="font-atsurt text-white flex justify-between absolute pin-b mb-20 w-full">
+						<div class="font-atsurt text-white flex justify-between absolute pin-b mb-20 w-full lg:px-5 md:px-0">
 							<div class="w-1/2 pl-10 text-sm text-left leading-normal opacity-50">
 								12 Southgate Street<br />
 								Winchester, SO23 9EF

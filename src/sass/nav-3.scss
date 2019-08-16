@@ -87,12 +87,14 @@
 
 .hover-container-1, .hover-container-2, .hover-container-3, .hover-container-4 {
   width: 100%;
-  height: 130px;
+  height: 300px;
+  width: 500px;
+  overflow: visible;
 }
 
 .hover-title-1, .hover-title-2, .hover-title-3, .hover-title-4 {
   position: absolute;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .nav-detail-3 {
