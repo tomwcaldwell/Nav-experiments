@@ -16,12 +16,12 @@
 			</ul>
 			
 			<div class="nav-contact hidden absolute pin-b w-full mb-20 font-atsurt">
-				<div class="w-1/2 pl-20 text-lg text-left leading-normal opacity-50 float-left">
+				<div class="w-1/2 pl-20 text-sm text-left leading-normal opacity-50 float-left">
 					12 Southgate Street<br />
 					Winchester, SO23 9EF
 				</div>
 				
-				<div class="w-1/2 pr-10 text-lg text-right leading-normal opacity-50 float-left">
+				<div class="w-1/2 pr-12 text-sm text-right leading-normal opacity-50 float-left">
 					<span class="cursor-pointer">Instagram</span><br />
 					<span class="cursor-pointer">Twitter</span>
 				</div>
