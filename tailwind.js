@@ -196,11 +196,11 @@ module.exports = {
 
   fonts: {
     'atsurt': [
-      'AT Surt',
+      'AT Surt Light',
       'sans'
     ],
     'harriet': [
-      'Harriet Display',
+      'Harriet Display Light',
       'serif'
     ],
     'sans': [
