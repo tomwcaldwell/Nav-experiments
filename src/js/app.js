@@ -53,7 +53,6 @@ $('.nav-button-2').click(function() {
 
 	setTimeout(function() {
 		$('.nav-detail-2 ul').toggleClass('hidden');
-		$('.nav-detail-2 ul').css('margin-top', '400px');
 		$('.nav-detail-2 ul li').each(function(i) {
 		   $(this).delay(1000 * i).animate({'opacity': 1}, 2000);
 		});
